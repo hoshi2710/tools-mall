@@ -1,0 +1,13 @@
+#terms_agree_1
+{
+	width: 90%;	
+}
+a[href="./terms_1.html"]
+{
+	margin-right:15%;
+}
+button[type="submit"]
+{
+	margin: 0 auto;
+	margin-top: 15px;
+}

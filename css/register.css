@@ -1,0 +1,154 @@
+#sub_title
+{
+	margin-left:10%;
+	float:left;
+}
+
+.register_form
+{
+	margin-top:20px;
+	margin-left:10%;
+}
+#terms_agree_1
+{
+	border:1px solid rgba(170, 170, 170, 0.596);
+	margin-top:8px;
+	width:90%;
+	height: 85px;
+	border-radius:10px;
+	background-color:white;
+	cursor:pointer;
+}
+
+.term,.input_account, .additional_info
+{
+	transition: opacity 0.2s;
+}
+
+a > i
+{
+	font-style: normal;
+}
+#terms_agree_1 i
+{
+	position: absolute;
+	font-family: 'Material Icons';
+	color: gray !important;
+	margin:15px;
+	font-size:35pt;
+	font-style:normal;
+	float:left;
+	user-select: none;
+	transition: 0.2s;
+    -moz-user-select: none;
+    -ms-touch-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+span
+{
+	margin-top:2px;
+}
+
+button[type="submit"]
+{
+	margin: 0 auto;
+	width:90%;
+}
+.input_account > *
+{
+	margin-top:15px;
+}
+#terms_agree_1 div
+{
+	margin:30px;
+	float:right;
+	user-select: none;
+    -moz-user-select: none;
+    -ms-touch-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+a[href="./terms_1.html"]
+{
+	font-size:12pt;
+	float:right;
+	margin-right:70px;
+	margin-bottom:-10px;
+	user-select: none;
+    -moz-user-select: none;
+    -ms-touch-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+
+input[type="text"], input[type="email"], input[type="password"]
+{
+	width: 90%;
+    border-radius: 10px;
+    border: 2px solid rgba(170, 170, 170, 0.596);
+    background-color: rgba(156, 156, 156, 0.144);
+    color: gray;
+    height: 55px;
+    font-size: 15pt;
+    padding-left: 10px;
+    -webkit-appearance: none;
+    outline: none;
+	-moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+input[placeholder="우편 번호"]
+{
+	width:40%;
+	margin-right:0;
+}
+
+#search_zipcode
+{
+	width:49%;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: gray;
+    font-size: 13pt;
+    font-weight: 100;
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+
+.additional_info > *
+{
+	margin-bottom:15px;
+	-moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+
+.additional_info
+{
+	display:none;
+	opacity:0;
+}
+
+#next
+{
+    width: 90%;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #b93333;
+    font-size: 13pt;
+    font-weight: 100;
+    transition: background-color 0.4s;
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
