@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="./js/script.js"></script>
+    
     <title>Document</title>
 </head>
 <body>
+    
     <div class="mobile_navigation_menu">
         
     </div>
@@ -20,8 +21,8 @@
     <div class="mini_bar">
         <div class="wrapper">
             <div class="seller_contact">
-                <a href="tel:01091094912"><i>call</i> 010-9109-4912</a>
-                <a href="mailto:ky2710@nate.com"><i>mail</i>ky2710@nate.com</a>
+                <a href="tel:01091094912"><i>call</i> 010-0000-0000</a>
+                <a href="mailto:ky2710@nate.com"><i>mail</i>admin@toolsmall.com</a>
             </div>
             <div class="login_menu">
                 <?php
@@ -51,13 +52,18 @@
             </form>  
             </div>
         </div>
+        <nav>
         <div class="category">
             <a href="./category.php">카테고리</a>
             <a href="./brand.php">브랜드관</a>
             <a href="./notice.php">공지 사항</a>
             <a href="./help.php">고객 지원</a>
-            <a href="./basket.php">장바구니</a>
+            <a href="./mypage.php">마이페이지</a>
         </div>
+        <div class="optional_menu">
+
+        </div>
+        </nav>  
         </header>
         <div class="slideshow">
             <div class="img_list">
@@ -66,9 +72,9 @@
                 <img src="./images/slides/slide_3.png" alt="slide_3">
             </div>
         </div>
-        <div class="optional_menu">
-
-        </div>
+        
     </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

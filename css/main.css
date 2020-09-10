@@ -1,9 +1,14 @@
 @import url(mobile/main.css) (max-width:400px);
 .optional_menu
 {
-    width: 100%;
+    width: 1200px;
     height: 300px;
     border-radius: 10px;
     border: 2px solid #ae0000;
+    position: absolute;
+    z-index: 997;
+    background-color: #fff;
+    transform: translateY(-15px);
+    display: none;
 }
 

@@ -17,7 +17,7 @@
 .wrapper
 {
     margin: 0 auto;
-    width: 80%;
+    width: 1200px;
 }
 header
 {
@@ -58,6 +58,8 @@ form
     background-color: #ae0000;
     border-radius: 10px;
     border: solid #ae0000;
+    z-index: 998;
+    position: relative;
 }
 .category > *
 {
