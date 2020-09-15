@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
-    <title>Document</title>
+    <title>Tools Mall</title>
 </head>
 <body>
     
@@ -61,7 +61,43 @@
             <a href="./mypage.php">마이페이지</a>
         </div>
         <div class="optional_menu">
-
+        <div class="items">
+                <ul>
+                    <li><a href="">d</a></li>
+                    <li><a href="">d</a></li>
+                    <li><a href="">d</a></li>
+                    <li><a href="">d</a></li>
+                    <li><a href="">d</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">d</a></li>
+                    <li><a href="">d</a></li>
+                    <li><a href="">d</a></li>
+                    <li><a href="">d</a></li>
+                    <li><a href="">d</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">d</a></li>
+                    <li><a href="">d</a></li>
+                    <li><a href="">d</a></li>
+                    <li><a href="">d</a></li>
+                    <li><a href="">d</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">d</a></li>
+                    <li><a href="">d</a></li>
+                    <li><a href="">d</a></li>
+                    <li><a href="">d</a></li>
+                    <li><a href="">d</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">d</a></li>
+                    <li><a href="">d</a></li>
+                    <li><a href="">d</a></li>
+                    <li><a href="">d</a></li>
+                    <li><a href="">d</a></li>
+                </ul>
+        </div>              
         </div>
         </nav>  
         </header>

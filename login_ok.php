@@ -2,7 +2,7 @@
 $connect = mysqli_connect('localhost','root','hh3302@@','main'); // (서버주소, 계정 명, 패스워드, 데이타베이스 명)
 mysqli_set_charset($connect,"utf8");
 mysqli_query("SET NAMES utf8");
-$login = 'SELECT * FROM user WHERE email=\'' . $_POST['login_email'] . '\' AND password=md5(\'' . $_POST['login_pw'] . '\')';
+$login = 'SELECT * FROM users WHERE email=\'' . $_POST['login_email'] . '\' AND password=md5(\'' . $_POST['login_pw'] . '\')';
 $login_result = mysqli_query($connect, $login);
 $row = mysqli_fetch_array($login_result);
 if($row['email'] != "")
