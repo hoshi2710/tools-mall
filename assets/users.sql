@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- 생성 시간: 20-09-15 04:34
+-- 생성 시간: 20-09-21 03:02
 -- 서버 버전: 10.1.30-MariaDB
 -- PHP 버전: 7.2.2
 
@@ -38,8 +38,7 @@ CREATE TABLE `users` (
   `kakao_token` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `registered_date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
-
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
