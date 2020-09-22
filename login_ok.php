@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors', '0');
 $connect = mysqli_connect('localhost','root','hh3302@@','main'); // (서버주소, 계정 명, 패스워드, 데이타베이스 명)
 mysqli_set_charset($connect,"utf8");
 mysqli_query("SET NAMES utf8");

@@ -35,10 +35,11 @@
 					<div class="input_account">
 						<input type="email" id="email_field" name="register_email" placeholder="이메일">
 						<input type="password" id="password_field"  name="register_pw" placeholder="패스워드">
-						<input type="password" id="password_verify_field" name="register_pw" placeholder="패스워드 확인">
+						<input type="password" id="password_verify_field" name="register_pw_verify" placeholder="패스워드 확인">
 					<button id="next" onclick="return register_next();">다음</button>
 					</div>
 					<div class="additional_info">
+					<input type="text" id="name" name="register_name" placeholder="이름">
 						<div class="zipcode">
 							<input type="text" id="zipcode" name="register_address_1" placeholder="우편 번호" readonly>
 							<button id="search_zipcode" onclick="return find_zipcode();">우편번호 검색</button>
@@ -46,7 +47,6 @@
 						<input type="text" id="address1" name="register_address_1" placeholder="주소 1" readonly>
 						<input type="text" id="address2" name="register_address_2" placeholder="주소 2">
 						<input type="text" id="phone_number" name="register_phone_number" placeholder="전화 번호 ('-'없이 입력)">
-						<input type="text" id="promotion" name="promotion" placeholder="<공구몰 이름> 을 알게된 경로 (선택)">
 						<button type="submit">가입하기</button>
 					</div>
             	</form>
