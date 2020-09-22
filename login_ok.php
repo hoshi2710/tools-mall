@@ -17,7 +17,6 @@ if($row['email'] != "")
     $_SESSION['kakao_token'] = $row['kakao_token'];
     $_SESSION['registered_date'] = $row['registered_date'];
     
-    // echo "<script>alert('로그인 성공!');";
 	echo "<script>alert('".$row['name']."님 환영합니다!');";
     echo " window.location.replace('./index.php');</script>";
     
