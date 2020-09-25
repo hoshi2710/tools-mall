@@ -108,7 +108,33 @@
                 <img src="./images/slides/slide_3.png" alt="slide_3">
             </div>
         </div>
-        
+        <div class="recommend_product">
+        <h2>Tools PICK!</h2>
+        <div class="recommend_product_items">
+           <?php
+           ini_set('display_errors', '0');
+                $connect = mysqli_connect('localhost','root','hh3302@@','main'); // (서버주소, 계정 명, 패스워드, 데이타베이스 명)
+                mysqli_set_charset($connect,"utf8");
+                mysqli_query("SET NAMES utf8");
+                $find_recommend_product = 'SELECT * FROM `recommend_product`';
+                $result_recommend_product = mysqli_query($connect,$find_recommend_product);
+                while($row = mysqli_fetch_array($result_recommend_product))
+                {
+                    $insert = '<section>
+                    <div class="product_img" style="background-image:url(\'' . $row['img_path'] . '\')"></div>
+                    <div class="product_detail">
+                        <h2>' . $row['product_name'] . '</h2>
+                        <p>' . $row['detail'] . '</p>
+                        <div class="price">₩ ' . $row['price'] . '</div>
+                        <div class="product_go_icon">＞</div>
+                    </div>
+                </section>';
+                    echo $insert;
+
+                }
+           ?>
+        </div>
+        </div>
     </div>
     <script src="./js/jquery.js"></script>
     <script src="./js/script.js"></script>
