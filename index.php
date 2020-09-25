@@ -63,11 +63,18 @@
         <div class="optional_menu">
         <div class="items">
                 <ul>
-                    <li><a href="">d</a></li>
-                    <li><a href="">d</a></li>
-                    <li><a href="">d</a></li>
-                    <li><a href="">d</a></li>
-                    <li><a href="">d</a></li>
+                    <li><a href="">작업공구</a></li>
+                    <li><a href="">전동공구</a></li>
+                    <li><a href="">측정공구</a></li>
+                    <li><a href="">에어공구</a></li>
+                    <li><a href="">더보기</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">브랜드1</a></li>
+                    <li><a href="">브랜드2</a></li>
+                    <li><a href="">브랜드3</a></li>
+                    <li><a href="">브랜드3</a></li>
+                    <li><a href="">더보기</a></li>
                 </ul>
                 <ul>
                     <li><a href="">d</a></li>
@@ -84,16 +91,9 @@
                     <li><a href="">d</a></li>
                 </ul>
                 <ul>
-                    <li><a href="">d</a></li>
-                    <li><a href="">d</a></li>
-                    <li><a href="">d</a></li>
-                    <li><a href="">d</a></li>
-                    <li><a href="">d</a></li>
-                </ul>
-                <ul>
-                    <li><a href="">d</a></li>
-                    <li><a href="">d</a></li>
-                    <li><a href="">d</a></li>
+                    <li><a href="">정보 수정</a></li>
+                    <li><a href="">배송 조회</a></li>
+                    <li><a href=""></a></li>
                     <li><a href="">d</a></li>
                     <li><a href="">d</a></li>
                 </ul>
@@ -111,6 +111,15 @@
         <div class="recommend_product">
         <h2>Tools PICK!</h2>
         <div class="recommend_product_items">
+                <section>
+                    <div class="product_img" style="background-image:url(\'' . $row['img_path'] . '\')"></div>
+                    <div class="product_detail">
+                        <h2>TEST</h2>
+                        <p>test</p>
+                        <div class="price">₩ 10,000</div>
+                        <div class="product_go_icon">＞</div>
+                    </div>
+                </section>
            <?php
            ini_set('display_errors', '0');
                 $connect = mysqli_connect('localhost','root','hh3302@@','main'); // (서버주소, 계정 명, 패스워드, 데이타베이스 명)

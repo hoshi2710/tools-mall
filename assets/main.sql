@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- 생성 시간: 20-09-25 04:25
+-- 생성 시간: 20-09-25 06:34
 -- 서버 버전: 10.1.30-MariaDB
 -- PHP 버전: 7.2.2
 
@@ -21,6 +21,29 @@ SET time_zone = "+00:00";
 --
 -- 데이터베이스: `main`
 --
+
+-- --------------------------------------------------------
+
+--
+-- 테이블 구조 `product`
+--
+
+CREATE TABLE `product` (
+  `product_name` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `price` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `detail` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `img_path` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `brand` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `detail_img_path` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `category` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- 테이블의 덤프 데이터 `product`
+--
+
+INSERT INTO `product` (`product_name`, `price`, `detail`, `img_path`, `brand`, `detail_img_path`, `category`) VALUES
+('몽키스패너4in', '3,500', '스마토사의 몽키스패너', '../images/product/SMATO-monkey-spanner.jpg', 'smato', '../images/detail/SMATO-monkey-spanner.jpg', '작업공구');
 
 -- --------------------------------------------------------
 
