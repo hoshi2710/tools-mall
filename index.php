@@ -77,25 +77,25 @@
                     <li><a href="">더보기</a></li>
                 </ul>
                 <ul>
-                    <li><a href="">d</a></li>
-                    <li><a href="">d</a></li>
-                    <li><a href="">d</a></li>
-                    <li><a href="">d</a></li>
-                    <li><a href="">d</a></li>
+                    <li><a href="">공지사항</a></li>
+                    <li><a href="">이벤트</a></li>
+                    <li><a href="">신제품 안내</a></li>
+                    <li><a href="">예약구매 안내</a></li>
+                    <li><a href="">더보기</a></li>
                 </ul>
                 <ul>
-                    <li><a href="">d</a></li>
-                    <li><a href="">d</a></li>
-                    <li><a href="">d</a></li>
-                    <li><a href="">d</a></li>
-                    <li><a href="">d</a></li>
+                    <li><a href="">1:1문의</a></li>
+                    <li><a href="">자주하는 질문(Q&A)</a></li>
+                    <li><a href="">대량주문 문의</a></li>
+                    <li><a href="">자료실</a></li>
+                    <li><a href="">더보기</a></li>
                 </ul>
                 <ul>
                     <li><a href="">정보 수정</a></li>
                     <li><a href="">배송 조회</a></li>
-                    <li><a href=""></a></li>
-                    <li><a href="">d</a></li>
-                    <li><a href="">d</a></li>
+                    <li><a href="">맴버쉽</a></li>
+                    <li><a href="">수리 신청</a></li>
+                    <li><a href="">수리 내역</a></li>
                 </ul>
         </div>              
         </div>
@@ -117,7 +117,7 @@
                         <h2>TEST</h2>
                         <p>test</p>
                         <div class="price">₩ 10,000</div>
-                        <div class="product_go_icon">＞</div>
+                        <div class="product_add_icon">+</div>
                     </div>
                 </section>
            <?php
@@ -135,7 +135,7 @@
                         <h2>' . $row['product_name'] . '</h2>
                         <p>' . $row['detail'] . '</p>
                         <div class="price">₩ ' . $row['price'] . '</div>
-                        <div class="product_go_icon">＞</div>
+                        <div class="product_add_icon">+</div>
                     </div>
                 </section>';
                     echo $insert;
@@ -144,7 +144,35 @@
            ?>
         </div>
         </div>
+        <div class="all_products">
+        <h2>전체 상품</h2>
+            <div class="product_list">
+            <?php
+                $connect = mysqli_connect('localhost','root','hh3302@@','main'); // (서버주소, 계정 명, 패스워드, 데이타베이스 명)
+                mysqli_set_charset($connect,"utf8");
+                mysqli_query("SET NAMES utf8");
+                $find_recommend_product = 'SELECT * FROM `product`';
+                $result_recommend_product = mysqli_query($connect,$find_recommend_product);
+                while($row = mysqli_fetch_array($result_recommend_product))
+                {
+                    $insert = '<section>
+                    <div class="product_img" style="background-image:url(\'' . $row['img_path'] . '\')"></div>
+                    <div class="product_detail">
+                        <h2>' . $row['product_name'] . '</h2>
+                        <p>' . $row['detail'] . '</p>
+                        <div class="price">₩ ' . $row['price'] . '</div>
+                        <div class="product_add_icon">+</div>
+                    </div>
+                </section>';
+                    echo $insert;
+
+                }
+            ?>
+            </div>
+   
     </div>
+    </div>
+   
     <script src="./js/jquery.js"></script>
     <script src="./js/script.js"></script>
 </body>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- 생성 시간: 20-09-25 06:34
+-- 생성 시간: 20-09-29 06:07
 -- 서버 버전: 10.1.30-MariaDB
 -- PHP 버전: 7.2.2
 
@@ -43,7 +43,9 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`product_name`, `price`, `detail`, `img_path`, `brand`, `detail_img_path`, `category`) VALUES
-('몽키스패너4in', '3,500', '스마토사의 몽키스패너', '../images/product/SMATO-monkey-spanner.jpg', 'smato', '../images/detail/SMATO-monkey-spanner.jpg', '작업공구');
+('몽키스패너4in', '3,500', '스마토사의 몽키스패너', '../images/product/SMATO-monkey-spanner.jpg', 'smato', '../images/detail/SMATO-monkey-spanner.jpg', '작업공구'),
+('장도리', '25,980', '못을 박고 뺄때 그외에도 다양한 용도(???)로 사용이 가능한 다용도 망치, 장도리!', '../images/product/brand1_crowbar_hammer.jpg', '브랜드1', '', '작업공구'),
+('세라믹 스틱형 인두기', '44,410', '테란도 그렇게 사랑한다는 평점 5점의 그 인두기?! 특히 미네랄 채굴도 잘 된다는 소문이 있는데...?', '../images/product/brand2_indugi.jpg', '브랜드2', '', '작업공구');
 
 -- --------------------------------------------------------
 
@@ -83,6 +85,13 @@ CREATE TABLE `users` (
   `kakao_token` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `registered_date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- 테이블의 덤프 데이터 `users`
+--
+
+INSERT INTO `users` (`name`, `address1`, `address2`, `phone_number`, `email`, `password`, `kakao_token`, `registered_date`) VALUES
+('테스트', '경기 수원시 영통구 동수원로551번길 16', '', '01012345678', 'test1234@test.com', '5f4dcc3b5aa765d61d8327deb882cf99', '', '2020-09-29');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

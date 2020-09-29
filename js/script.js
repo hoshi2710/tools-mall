@@ -28,3 +28,6 @@ function search1()
     },function () {
         $(".optional_menu").stop().slideUp();  
     });
+    $(".product_add_icon").click(function () {
+        confirm('장바구니에 상품을 담았습니다! 장바구니로 이동하시겠습니까?');
+    });

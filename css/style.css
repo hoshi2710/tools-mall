@@ -100,6 +100,10 @@ form
     display: flex;
     overflow: hidden;
 }
+.img_list img
+{
+    cursor: pointer;
+}
 .seller_contact > a > i, .login_menu > a > i
 {
     font-family: 'Material Icons' !important;
