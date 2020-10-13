@@ -61,7 +61,7 @@
 {
     display: flex;
     flex-wrap: nowrap; 
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: hidden;
     height: 300px;
 }
@@ -170,5 +170,45 @@
 {
    margin-top: 50px;
 }
+
+.horizontal_scroll_controller
+{
+    width: 1300px;
+    height: 300px;
+    position: absolute;
+    transform: translateX(-50px);
+}
+.scroll_left
+{
+    float: left;
+    height: 100%;
+    position: relative;
+}
+.scroll_right
+{
+    float: right;
+    height:100%;
+    position: relative;
+}
+.scroll_left, .scroll_right
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30pt;
+    color: rgb(170, 170, 170);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.2s;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+.scroll_left:hover, .scroll_right:hover
+{
+    background-color: rgb(224, 224, 224);
+}
+
 
 /***************************************/

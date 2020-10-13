@@ -1,6 +1,6 @@
 <?php
 ini_set('display_errors', '0');
-$connect = mysqli_connect('localhost','root','hh3302@@','main'); // (서버주소, 계정 명, 패스워드, 데이타베이스 명)
+$connect = mysqli_connect('localhost','root','','main'); // (서버주소, 계정 명, 패스워드, 데이타베이스 명)
 mysqli_set_charset($connect,"utf8");
 mysqli_query("SET NAMES utf8");
 $register = 'INSERT INTO users(name,address1,address2,phone_number,email,password,registered_date) VALUES (\'' . $_POST['register_name'] . '\', \''. $_POST['register_address_1'] .'\',\''. $_POST['register_address_2'] .'\',\''. $_POST['register_phone_number'] .'\',\''. $_POST['register_email'] .'\',md5(\''. $_POST['register_pw'] .'\'),CURDATE())';

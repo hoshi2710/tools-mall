@@ -110,7 +110,29 @@
         </div>
         <div class="recommend_product">
         <h2>Tools PICK!</h2>
+        <div class="horizontal_scroll_controller">
+        <div class="scroll_left">＜</div>
+        <div class="scroll_right">＞</div>
+        </div>
         <div class="recommend_product_items">
+                <section>
+                    <div class="product_img" style="background-image:url(\'' . $row['img_path'] . '\')"></div>
+                    <div class="product_detail">
+                        <h2>TEST</h2>
+                        <p>test</p>
+                        <div class="price">₩ 10,000</div>
+                        <div class="product_add_icon">+</div>
+                    </div>
+                </section>
+                <section>
+                    <div class="product_img" style="background-image:url(\'' . $row['img_path'] . '\')"></div>
+                    <div class="product_detail">
+                        <h2>TEST</h2>
+                        <p>test</p>
+                        <div class="price">₩ 10,000</div>
+                        <div class="product_add_icon">+</div>
+                    </div>
+                </section>
                 <section>
                     <div class="product_img" style="background-image:url(\'' . $row['img_path'] . '\')"></div>
                     <div class="product_detail">
@@ -122,7 +144,7 @@
                 </section>
            <?php
            ini_set('display_errors', '0');
-                $connect = mysqli_connect('localhost','root','hh3302@@','main'); // (서버주소, 계정 명, 패스워드, 데이타베이스 명)
+                $connect = mysqli_connect('localhost','root','','main'); // (서버주소, 계정 명, 패스워드, 데이타베이스 명)
                 mysqli_set_charset($connect,"utf8");
                 mysqli_query("SET NAMES utf8");
                 $find_recommend_product = 'SELECT * FROM `recommend_product`';
@@ -148,7 +170,7 @@
         <h2>전체 상품</h2>
             <div class="product_list">
             <?php
-                $connect = mysqli_connect('localhost','root','hh3302@@','main'); // (서버주소, 계정 명, 패스워드, 데이타베이스 명)
+                $connect = mysqli_connect('localhost','root','','main'); // (서버주소, 계정 명, 패스워드, 데이타베이스 명)
                 mysqli_set_charset($connect,"utf8");
                 mysqli_query("SET NAMES utf8");
                 $find_recommend_product = 'SELECT * FROM `product`';
