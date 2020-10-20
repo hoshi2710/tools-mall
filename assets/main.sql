@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- 생성 시간: 20-09-29 06:07
+-- 생성 시간: 20-10-20 04:07
 -- 서버 버전: 10.1.30-MariaDB
 -- PHP 버전: 7.2.2
 
@@ -45,7 +45,9 @@ CREATE TABLE `product` (
 INSERT INTO `product` (`product_name`, `price`, `detail`, `img_path`, `brand`, `detail_img_path`, `category`) VALUES
 ('몽키스패너4in', '3,500', '스마토사의 몽키스패너', '../images/product/SMATO-monkey-spanner.jpg', 'smato', '../images/detail/SMATO-monkey-spanner.jpg', '작업공구'),
 ('장도리', '25,980', '못을 박고 뺄때 그외에도 다양한 용도(???)로 사용이 가능한 다용도 망치, 장도리!', '../images/product/brand1_crowbar_hammer.jpg', '브랜드1', '', '작업공구'),
-('세라믹 스틱형 인두기', '44,410', '테란도 그렇게 사랑한다는 평점 5점의 그 인두기?! 특히 미네랄 채굴도 잘 된다는 소문이 있는데...?', '../images/product/brand2_indugi.jpg', '브랜드2', '', '작업공구');
+('세라믹 스틱형 인두기', '44,410', '테란도 그렇게 사랑한다는 평점 5점의 그 인두기?! 특히 미네랄 채굴도 잘 된다는 소문이 있는데...?', '../images/product/brand2_indugi.jpg', '브랜드2', '', '작업공구'),
+('충전 드라이버 드릴 GSR10', '145,500', 'BOSCH사의 전동 드라이버\r\n주의! 작업중에 목장갑 착용을 자제해 주십시오.', '../images/product/bosch_auto_driver.jpg', 'bosch', '', '전동공구'),
+('고급형 육각렌치 세트(육각, 볼, 별)', '5,900', 'BONDHUS사의 육각렌치 세트 입니다.', '../images/product/bondhus_hexa_ball_star_wrench.jpg', 'bondhus', '', '작업공구');
 
 -- --------------------------------------------------------
 
