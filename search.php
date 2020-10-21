@@ -51,6 +51,7 @@
             </form>  
             </div>
         </div>
+        <nav>
         <div class="category"> <!-- 로고 밑에 존재하는 메뉴, MouseHover시 optional_menu영역, 즉 서브 메뉴가 내려온다. -->
             <a href="./category.php">카테고리</a>
             <a href="./brand.php">브랜드관</a>
