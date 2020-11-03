@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.7
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- 생성 시간: 20-10-20 04:07
--- 서버 버전: 10.1.30-MariaDB
--- PHP 버전: 7.2.2
+-- Host: localhost
+-- 생성 시간: 20-11-03 02:36
+-- 서버 버전: 10.4.14-MariaDB
+-- PHP 버전: 7.4.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -69,7 +68,8 @@ CREATE TABLE `recommend_product` (
 INSERT INTO `recommend_product` (`product_name`, `price`, `detail`, `img_path`) VALUES
 ('몽키 스페너', '50,000', '실제 원숭이가 가지고 놀았던 그 스페너...?!', '../images/product/monkey_spanner.jpg'),
 ('빠루', '70,000', '그래서 반쪽인생 3는 언제 나온다고요, 게이븐씨?', '../images/product/crowbar.jpg'),
-('빠따', '60,000', '손에 쥐는 순간 누군가를 ㅂX으로 만들어 주고 싶은 욕구가 치밀어 오르는 최고의 BBADDA!', '../images/product/bbadda.jpg');
+('빠따', '60,000', '손에 쥐는 순간 누군가를 ㅂX으로 만들어 주고 싶은 욕구가 치밀어 오르는 최고의 BBADDA!', '../images/product/bbadda.jpg'),
+('가정용 에어 콤프레샤', '147,000', '한신 사의 가정용 에어콤프레샤,\r\n자전거 타이어 공기주입, 먼지청소등 다양한 용도로 사용 가능!', '../images/product/hanshin_air-cm.jpg');
 
 -- --------------------------------------------------------
 
