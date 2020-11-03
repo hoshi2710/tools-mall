@@ -74,11 +74,14 @@
     white-space: normal;
     text-overflow: ellipsis;
     overflow: hidden;
-    display: block;
+    display: -webkit-box;
     width: 100%;
-    height: 100px;
     margin-top: 5px;
     position: relative;
+    -webkit-line-clamp: 3; /* 라인수 */	
+
+-webkit-box-orient: vertical; 
+
 }
 .product_add_icon
 {
@@ -108,6 +111,14 @@
 .recommend_product_items .price
 {
     font-size: 15pt;
+    bottom: 60px;
+    position: absolute;
+}
+.all_products .price
+{
+    font-size: 15pt;
+    bottom: 60px;
+    position: absolute;
 }
 
 .product_list

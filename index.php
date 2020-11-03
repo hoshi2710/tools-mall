@@ -120,33 +120,6 @@
         <!-- 추천 상품 항목 -->
         <div class="recommend_product_items">
         <!-- 상품명이 TEST인 항목들은 모두 화면 테스트를 위해서 삽입한 것 -->
-                <section>
-                    <div class="product_img" style="background-image:url(\'' . $row['img_path'] . '\')"></div>
-                    <div class="product_detail">
-                        <h2>TEST</h2>
-                        <p>test</p>
-                        <div class="price">₩ 10,000</div>
-                        <div class="product_add_icon">+</div>
-                    </div>
-                </section>
-                <section>
-                    <div class="product_img" style="background-image:url(\'' . $row['img_path'] . '\')"></div>
-                    <div class="product_detail">
-                        <h2>TEST</h2>
-                        <p>test</p>
-                        <div class="price">₩ 10,000</div>
-                        <div class="product_add_icon">+</div>
-                    </div>
-                </section>
-                <section>
-                    <div class="product_img" style="background-image:url(\'' . $row['img_path'] . '\')"></div>
-                    <div class="product_detail">
-                        <h2>TEST</h2>
-                        <p>test</p>
-                        <div class="price">₩ 10,000</div>
-                        <div class="product_add_icon">+</div>
-                    </div>
-                </section>
             <!-- SQL쿼리를 이용해 main.recommend_product 테이블에 존재하는 항목을 가져옴-->
            <?php
            ini_set('display_errors', '0');

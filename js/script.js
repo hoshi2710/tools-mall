@@ -21,7 +21,7 @@ function search1() //검색창에서 Enter키를 눌렀을경우 발생하는 f(
             
         a = -1200*slideNo; // 이미지의 폭만큼 슬라이드를 이동시키도록 변수에 저장
         $(".img_list").animate({"left":a+"px"}); //이미지가 슬라이드할떄 애니메이션효과를 주기위해 Jquery를 이용
-    },3000);
+    },5000);
     $("nav").hover(function () // 메인 상단 메뉴에 MouseHover 이벤트가 발생 했을때
     {
         $(".optional_menu").stop().slideDown(); // 추가 메뉴가 내려옴
